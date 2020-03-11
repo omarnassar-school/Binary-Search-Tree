@@ -108,7 +108,8 @@ int main() {
 	cout << endl << value << " is in the tree." << endl << endl;
       else
 	cout << endl << value << " is not in the tree." << endl << endl;
-      temp -> ~Node();
+      temp = NULL;
+      delete temp;
     }
     else if (method == 4) {
       break;
